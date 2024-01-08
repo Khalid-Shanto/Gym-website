@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shelby Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/CSS/style.css">
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="/dumbbell.png" alt="img not found">
+            <div>Shelby Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href=" gymwebsite.html" >Home</a></li>
+                <li><a href="trainerform.html">Trainer form</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        
+    </header>
+    <div class="container">
+        <h1>Join the best gym in the town</h1>
+        <form action="connect.php" method="post">
+            <div class="form-group">
+                <input type="text"  placeholder="Enter your Name" name="name">
+            </div>
+            <div class="form-group">
+                <input type="number"  placeholder="Enter your Age" name="age">
+            </div>
+            <div class="form-group">
+                <input type="text"  placeholder="Enter your Gender" name="gender">
+            </div>
+            <div class="form-group">
+                <input type="text"  placeholder="Enter your Locality" name="locality">
+            </div>
+            <div class="form-group">
+                <input type="text"  placeholder="Enter your Email Id" name="email">
+            </div>
+            <div class="form-group">
+                <input type="text"  placeholder="Enter your Phone Number" name="number">
+            </div>
+            <button type="submit" onclick="checker()" class="btn" name="submit">Submit</button>
+        </form>
+    </div>
+    <script>alert("Welcome to Shelby Fitness 💪");</script>
+    <script>
+        function checker(){
+            var result = confirm('Are you sure?');
+            if (result == false){
+                event.preventDefault();
+            }
+        }
+    </script>
+</body>
+
+</html>
